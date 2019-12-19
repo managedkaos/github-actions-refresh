@@ -4,6 +4,4 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo Hello, world!
-    steps:
       - uses: actions/docker/cli@8cdf801b322af5f369e00d85e9cf3a7122f49108
