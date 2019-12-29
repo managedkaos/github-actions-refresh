@@ -1,7 +1,17 @@
-name: Hello World
-on: [push]
+name: first
+
+on: push
+
 jobs:
-  say-hello:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/docker/cli@8cdf801b322af5f369e00d85e9cf3a7122f49108
+    job1:
+        name: First Job
+        runs-on: ubuntu-latest
+        steps:
+            - name: Step one
+            - name: Step two
+    job2:
+        name: Second Job
+        runs-on: windows-latest
+        steps:
+            - name: Step one
+            - name: Step two
